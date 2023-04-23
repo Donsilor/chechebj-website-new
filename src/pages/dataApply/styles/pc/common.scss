@@ -1,0 +1,212 @@
+@import "~@/components/navHeader/light.scss";
+@import "~@/components/footer/style.scss";
+
+.root {
+  padding-top: 80px;
+  background: #f7faff;
+}
+.page_header {
+  width: 100%;
+  background: #2e51dc;
+  .header_bar {
+    max-width: 1200px;
+    margin: 0 auto;
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+}
+.data_page {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 0 30px;
+  .data_title {
+    text-align: center;
+    .font {
+      font-size: 28px;
+      color: #333333;
+      margin-top: -20px;
+      margin-bottom: -20px;
+    }
+    .font_e {
+      font-size: 38px;
+      color: #e6eaf2;
+      font-weight: 800;
+    }
+  }
+  .data_card {
+    margin: 50px 0;
+    .icon_card {
+      position: relative;
+      text-align: center;
+      height: 350px;
+      width: 350px;
+      padding: 55px 20px;
+      &:hover {
+        box-shadow: 0px 8px 16px rgba(60, 131, 248, 0.2);
+        transition: 0.5s;
+        background: #fff;
+      }
+      &:before {
+        content: " ";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 4px;
+        background: transparent;
+        transition: 0.5s;
+      }
+      &:hover:before {
+        content: " ";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 4px;
+        background: #3c83f8;
+        transition: 0.5s;
+      }
+      img {
+        width: 40px;
+        height: 40px;
+      }
+      .title {
+        font-size: 20px;
+        color: #333333;
+        margin-top: 20px;
+      }
+      .subtitle {
+        font-size: 14px;
+        color: #19213b;
+      }
+    }
+  }
+}
+.yycj_page {
+  width: 100%;
+  padding: 60px 30px;
+  background: url("~@/assets/dataApply-img1.png") no-repeat center;
+  background-size: cover;
+  .row {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  .data_title {
+    text-align: center;
+    .font {
+      font-size: 28px;
+      color: #333333;
+      margin-top: -20px;
+      margin-bottom: -20px;
+    }
+    .font_e {
+      font-size: 38px;
+      color: #d2dcf1;
+      font-weight: 800;
+    }
+  }
+  .yycj_icon_card {
+    position: relative;
+    text-align: center;
+    width: 280px;
+    height: 280px;
+    margin-top: 20px;
+    padding: 40px;
+    &:hover {
+      box-shadow: 0px 8px 16px rgba(60, 131, 248, 0.2);
+      background: #fff;
+      transition: 0.5s;
+    }
+    &:before {
+      content: " ";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 4px;
+      background: transparent;
+      transition: 0.5s;
+    }
+    &:hover:before {
+      transition: 0.5s;
+      background: #3c83f8;
+    }
+    img {
+      width: 44px;
+      height: 44px;
+    }
+    .title {
+      font-size: 20px;
+      color: #333333;
+      margin-top: 20px;
+    }
+    .subtitle {
+      font-size: 14px;
+      color: #19213b;
+    }
+  }
+}
+.serve_page {
+  max-width: 1200px;
+  margin: 60px auto;
+  padding: 0 30px;
+  .data_title {
+    text-align: center;
+    .font {
+      font-size: 28px;
+      color: #333333;
+      margin-bottom: -20px;
+    }
+    .font_e {
+      font-size: 38px;
+      color: #e6eaf2;
+      font-weight: 800;
+    }
+  }
+  .icon_card {
+    position: relative;
+    width: 520px;
+    height: 140px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #333333;
+    margin: 20px;
+    padding: 20px;
+    &:hover {
+      box-shadow: 0px 8px 16px rgba(60, 131, 248, 0.2);
+      transition: 0.5s;
+      background: #fff;
+    }
+    &:before {
+      content: " ";
+      position: absolute;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      width: 4px;
+      background: transparent;
+      transition: 0.5s;
+    }
+    &:hover:before {
+      transition: 0.5s;
+      background: #3c83f8;
+    }
+    & > div p {
+      display: block;
+    }
+    .title {
+      font-size: 20px;
+    }
+    .subtitle {
+      font-size: 14px;
+    }
+    img {
+      width: 50px;
+      height: 50px;
+      margin-right: 20px;
+    }
+  }
+}

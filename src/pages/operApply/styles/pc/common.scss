@@ -1,0 +1,126 @@
+@import "~@/components/navHeader/light.scss";
+@import "~@/components/footer/style.scss";
+
+.root {
+  padding-top: 80px;
+  background: #f7faff;
+}
+.page_header {
+  width: 100%;
+  background: #3c83f8;
+  .header_bar {
+    max-width: 1200px;
+    margin: 0 auto;
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+}
+.content_page1 {
+  max-width: 1200px;
+  margin: 60px auto;
+  padding: 0 30px 20px;
+  .data_title {
+    text-align: center;
+    .font {
+      font-size: 28px;
+      color: #333333;
+      margin-bottom: -20px;
+      margin-top: -20px;
+    }
+    .font_e {
+      font-size: 38px;
+      color: #e6eaf2;
+      font-weight: 800;
+    }
+    .font_con {
+      font-size: 16px;
+      color: #666666;
+    }
+  }
+  .data_card {
+    margin: 50px 0;
+    .icon_card {
+      position: relative;
+      text-align: center;
+      height: 300px;
+      width: 350px;
+      padding: 55px 20px;
+      &.card_sm {
+        padding: 65px 25px;
+      }
+      &:hover {
+        box-shadow: 0px 8px 16px rgba(60, 131, 248, 0.2);
+        transition: all 0.5s;
+        background: #fff;
+      }
+      &:before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 4px;
+        background: transparent;
+        transition: 0.5s;
+      }
+      &:hover:before {
+        background: #3c83f8;
+        transition: all 0.5s;
+      }
+      img {
+        width: 40px;
+        height: 40px;
+      }
+      .title {
+        font-size: 20px;
+        color: #333333;
+        margin-top: 20px;
+      }
+      .subtitle {
+        font-size: 14px;
+        color: #19213b;
+      }
+    }
+  }
+}
+.content_page2 {
+  width: 100%;
+  padding: 0 30px;
+  background: url("~@/assets/operApply-img1.png") no-repeat
+    center;
+  background-size: cover;
+  .data_title {
+    padding-top: 50px;
+  }
+  .data_card{
+    .icon_card{
+      padding: 55px 14px;
+    }
+  }
+  .font_e {
+    color: #d2dcf1 !important;
+  }
+  .icon_card {
+    &:hover {
+      box-shadow: 0px 8px 16px rgba(60, 131, 248, 0.2);
+      background: #fff;
+      transition: all 0.5s;
+    }
+    &:before {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 4px;
+      background: transparent;
+      transition: 0.5s;
+    }
+    &:hover:before {
+      background: #3c83f8;
+      transition: all 0.5s;
+    }
+  }
+}

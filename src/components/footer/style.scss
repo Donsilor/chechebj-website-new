@@ -1,0 +1,323 @@
+@media screen and (min-width: 992px) {
+  .footer-wrapper {
+    width: 100%;
+    background: #19213b;
+    position: relative;
+    &:after {
+      content: "";
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 80px;
+      background-color: #27345f;
+      height: 1px;
+    }
+    .copyright {
+      position: absolute;
+      bottom: 30px;
+      left: 0;
+      right: 0;
+      height: 20px;
+      font-size: 14px;
+      font-weight: 300;
+      line-height: 20px;
+      color: #828ba7;
+      margin: 0 auto;
+      width: 100%;
+      max-width: 1200px;
+      text-align: center;
+    }
+
+    .footer {
+      width: 100%;
+      height: 442px;
+      margin: 0 auto;
+      max-width: 1200px;
+      display: flex;
+      justify-content: space-around;
+      align-items: flex-start;
+      padding-top: 57px;
+      .footer-header {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+
+        .footer-logo {
+          width: 150px;
+          height: auto;
+          margin-top: -2px;
+        }
+
+        .footer-phone {
+          width: 100%;
+          height: 36px;
+          background: #3c83f8;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin-top: 11px;
+          cursor: pointer;
+
+          img {
+            width: 16px;
+            height: auto;
+          }
+
+          span {
+            height: 24px;
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 24px;
+            color: #ffffff;
+          }
+        }
+      }
+
+      .footer-group {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+
+        &.contactus {
+          min-width: 350px;
+        }
+
+        .title {
+          height: 24px;
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 24px;
+          color: #c6cde5;
+          margin-bottom: 22px;
+        }
+
+        .footer-group-body {
+          display: flex;
+          flex-direction: column;
+          justify-content: flex-start;
+          align-items: flex-start;
+
+          .link {
+            height: 20px;
+            font-size: 14px;
+            font-weight: 300;
+            line-height: 20px;
+            color: #828ba7;
+            text-decoration: none;
+            margin-bottom: 15px;
+
+            &:hover {
+              color: #ffffff;
+            }
+            .divider {
+              margin: 0 10px;
+            }
+          }
+        }
+      }
+
+      .followus {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+
+        span {
+          height: 24px;
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 24px;
+          color: #ffffff;
+          margin-bottom: 22px;
+        }
+
+        img {
+          width: 128px;
+          height: auto;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 991px) {
+  img {
+    content: normal !important;
+  }
+  #footer span > a[href^="tel"] {
+    color: #ffffff !important;
+  }
+  .footer-wrapper {
+    width: 100%;
+    background: #19213b;
+    position: relative;
+    &:after {
+      content: "";
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 120px;
+      background-color: #27345f;
+      height: 1px;
+    }
+    .copyright {
+      position: absolute;
+      bottom: 10px;
+      left: 0;
+      right: 0;
+      font-size: 24px;
+      font-weight: 400;
+      line-height: 46px;
+      color: #828ba7;
+      margin: 0 auto;
+      width: 100%;
+      max-width: 1200px;
+      text-align: center;
+    }
+
+    .footer {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      padding: 60px 0 100px 24px;
+      .footer-header {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-bottom: 44px;
+        border-bottom: none;
+        align-items: center;
+
+        .footer-logo {
+          width: 218.25px;
+          height: auto;
+        }
+
+        .footer-phone {
+          width: 305px;
+          height: 56px;
+          background: #3c83f8;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          cursor: pointer;
+
+          img {
+            margin-left: 30px;
+            width: 28px;
+            height: auto;
+          }
+
+          span {
+            flex: 1;
+            height: 36px;
+            font-size: 24px;
+            font-weight: 500;
+            line-height: 36px;
+            color: #ffffff;
+          }
+        }
+      }
+
+      .footer-group {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        padding: 30px 0;
+        border-bottom: 1px solid #38446b;
+        position: relative;
+
+        &:before {
+          content: "";
+          position: absolute;
+          width: 28px;
+          height: 28px;
+          top: 40px;
+          right: 20px;
+          background: url("~@/components/footer/assets/collopse-icon.png")
+            no-repeat center;
+          background-size: contain;
+        }
+        .title {
+          width: 100%;
+          height: 50px;
+          font-size: 26px;
+          font-weight: 400;
+          line-height: 50px;
+          color: #c6cde5;
+        }
+
+        .footer-group-body {
+          display: flex;
+          width: 100%;
+          flex-direction: column;
+          justify-content: flex-start;
+          align-items: flex-start;
+          transition: all ease 0.5s;
+          max-height: 0px;
+          overflow: hidden;
+          .link {
+            margin-top: 34px;
+            font-size: 22px;
+            color: #ffffff;
+            cursor: pointer;
+            text-decoration: none;
+            &:first-child {
+              margin-top: 60px;
+            }
+            .divider {
+              width: 1px;
+              margin: 0 10px;
+              height: 14px;
+              line-height: 14px;
+              border: 1px solid #27345f;
+              opacity: 1;
+            }
+          }
+        }
+
+        &.expand {
+          &:before {
+            background: url("~@/components/footer/assets/expand-icon.png")
+              no-repeat center;
+            background-size: contain;
+          }
+          .footer-group-body {
+            max-height: 500px;
+          }
+          &.contactus .footer-group-body {
+            max-height: 600px !important;
+          }
+        }
+      }
+      .followus {
+        margin-top: 90px;
+        width: 100%;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: revert;
+        margin-bottom: 44px;
+        border-bottom: none;
+        align-items: center;
+        span {
+          height: 41px;
+          font-size: 28px;
+          font-weight: 400;
+          line-height: 41px;
+          color: #828ba7;
+        }
+        img {
+          width: 220px;
+          margin-bottom: 24px;
+        }
+      }
+    }
+  }
+}

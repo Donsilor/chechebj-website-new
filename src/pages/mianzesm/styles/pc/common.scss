@@ -1,0 +1,38 @@
+@import "~@/components/navHeader/light.scss";
+@import "~@/components/footer/style.scss";
+
+.root {
+  padding-top: 80px;
+  background: #f7faff;
+}
+.page_header {
+  width: 100%;
+  background: #19213b;
+  .header_bar {
+    max-width: 1200px;
+    margin: 0 auto;
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+}
+.info_page {
+  max-width: 1000px;
+  margin: 80px auto 165px;
+  color: #333333;
+  .title {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 32px;
+  }
+  .content {
+    font-size: 14px;
+    p {
+      line-height: 26px;
+    }
+    .tecism {
+      margin: 50px 0 30px;
+    }
+  }
+}

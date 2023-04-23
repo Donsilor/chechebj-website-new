@@ -1,0 +1,370 @@
+.product-banner {
+  max-width: 1200px;
+  width: 100%;
+  margin: 100px auto 0;
+  position: relative;
+
+  & > img {
+    width: 100%;
+    height: auto;
+  }
+
+  & > .apply-btn {
+    position: absolute;
+    bottom: 10%;
+    left: 5%;
+    width: 140px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 16px;
+    border: 1px solid #ffffff;
+    color: #ffffff;
+    text-align: center;
+    text-decoration: none;
+    &:hover {
+      background: rgba(255, 255, 255, 0.2);
+    }
+  }
+}
+
+@mixin contentShortLine {
+  position: relative;
+  &:after {
+    content: "";
+    position: absolute;
+    bottom: -26px;
+    left: 0;
+    width: 20px;
+    height: 2px;
+    background: #3c83f8;
+  }
+}
+
+.product-intro-content {
+  width: 85%;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 26px;
+  color: #666666;
+}
+
+.product-main-content {
+  padding: 50px 60px;
+
+  &.darkbg {
+    background-color: #f7faff;
+    margin-bottom: 26px;
+  }
+  &.horizonNone {
+    margin-top: 60px;
+    padding: 0;
+  }
+
+  .wording-part {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+    .header {
+      position: relative;
+    }
+    .title {
+      height: 41px;
+      font-size: 28px;
+      font-weight: 400;
+      line-height: 41px;
+      color: #333333;
+      z-index: 2;
+    }
+
+    .index {
+      height: 105px;
+      font-size: 71px;
+      font-weight: bold;
+      line-height: 105px;
+      color: #e1e8ff;
+      position: absolute;
+      top: -60px;
+      left: -20px;
+      z-index: -1;
+    }
+
+    .content {
+      margin-top: 14px;
+      margin-bottom: 0;
+      font-size: 18px;
+      font-weight: 300;
+      line-height: 26px;
+      color: #333333;
+      @include contentShortLine;
+    }
+
+    .content-list {
+      margin-top: 16px;
+      &.row {
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+      }
+      .content-item {
+        padding: 30px 32px;
+        display: flex;
+        align-items: center;
+        margin-bottom: 12px;
+        position: relative;
+        &:before {
+          content: "";
+          top: 0;
+          left: 0;
+          bottom: 0;
+          width: 330px;
+          position: absolute;
+          background: url("~@/pages/product-cheyinrongtong/assets/images/content-list-bg.png")
+            no-repeat center;
+        }
+        &:after {
+          content: "";
+          top: 0;
+          left: 330px;
+          bottom: 0;
+          right: 10px;
+          position: absolute;
+          background-color: #f7faff;
+        }
+      }
+    }
+
+    .content-thumbnail {
+      margin-top: 20px;
+      .content-item {
+        display: flex;
+        align-items: flex-start;
+        margin-bottom: 10px;
+        position: relative;
+        padding: 36px 30px;
+        &:before {
+          position: absolute;
+          top: 0;
+          right: 10px;
+          left: 0;
+          bottom: 0;
+          content: "";
+          background-color: #f7faff;
+          z-index: -1;
+        }
+        img {
+          width: 66px;
+          height: 66px;
+        }
+
+        .content-item-body {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          margin-left: 10px;
+          .title {
+            font-size: 20px;
+            font-weight: 400;
+            color: #333333;
+            margin-bottom: 6px;
+          }
+          .content-item-body-value {
+            font-size: 14px;
+            font-weight: 300;
+            line-height: 26px;
+            color: #333333;
+          }
+        }
+      }
+    }
+
+    .content-grid {
+      padding: 40px 0;
+      width: 100%;
+      .content-grid-item-wrapper {
+        padding-right: 14px;
+        padding-bottom: 14px;
+      }
+      .content-grid-item {
+        padding: 55px 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        box-shadow: 0px 4px 16px rgba(60, 131, 248, 0.1);
+        box-sizing: border-box;
+        img {
+          width: 40px;
+          height: 40px;
+          margin-bottom: 10px;
+        }
+        .content-grid-title {
+          font-size: 20px;
+          font-weight: 400;
+          margin-bottom: 5px;
+          color: #333333;
+        }
+        .content-grid-value {
+          width: 90%;
+          text-align: center;
+          font-size: 14px;
+          font-weight: 300;
+          line-height: 26px;
+          color: #333333;
+        }
+      }
+    }
+  }
+
+  .thumbnail-part {
+    display: flex;
+    img {
+      width: 100%;
+      margin: 0 auto;
+      height: auto;
+      align-self: flex-start;
+    }
+  }
+
+  .content-list-index {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    line-height: 36px;
+    text-align: center;
+    border: 2px solid #8bb7ff;
+    border-radius: 50%;
+    font-size: 20px;
+    color: #415594;
+    z-index: 2;
+  }
+
+  .content-list-value {
+    margin-left: 20px;
+    font-size: 16px;
+    font-weight: 300;
+    color: #333333;
+    flex: 1;
+    z-index: 2;
+  }
+}
+
+//产品页面footer
+.product-footer {
+  width: 100%;
+  height: 200px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .footer-head {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+
+    .prevtitle {
+      font-size: 32px;
+      font-weight: bold;
+      color: #ffffff;
+      opacity: 0.08;
+      margin-bottom: -20px;
+    }
+
+    .title {
+      font-size: 26px;
+      font-weight: 400;
+      line-height: 38px;
+      color: #ffffff;
+    }
+
+    .subtitle {
+      margin-top: -20px;
+      font-size: 32px;
+      font-weight: bold;
+      color: #ffffff;
+      opacity: 0.08;
+    }
+  }
+
+  .footer-link {
+    font-size: 16px;
+    z-index: 2;
+    display: inline-block;
+    padding: 7px 37px;
+    border: 1px solid #ffffff;
+    color: #ffffff;
+    text-decoration: none;
+    &:hover {
+      background: rgba(255, 255, 255, 0.2);
+    }
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .group-header {
+    .title {
+      font-weight: bold !important;
+    }
+  }
+  .product-main-content {
+    padding: 80px 24px;
+    .wording-part {
+      .title {
+        font-size: 30px;
+        font-weight: bold;
+      }
+      .content {
+        font-size: 26px;
+        letter-spacing: 2px;
+        line-height: 40px;
+      }
+    }
+    .thumbnail-part {
+      margin-top: 20px;
+      img {
+        width: 80%;
+      }
+    }
+  }
+  .content-thumbnail {
+    .content-item {
+      margin-bottom: 24px !important;
+    }
+    .title {
+      font-size: 30px !important;
+      font-weight: bold;
+    }
+    .content-item-body-value {
+      font-size: 26px !important;
+      letter-spacing: 2px !important;
+      line-height: 40px !important;
+    }
+  }
+  .content-list-value {
+    font-size: 26px !important;
+    letter-spacing: 2px !important;
+    line-height: 40px !important;
+  }
+  .product-intro-content {
+    width: 95%;
+    font-size: 26px;
+    letter-spacing: 2px;
+    line-height: 40px;
+  }
+  .content-grid-item {
+    .content-grid-title {
+      font-size: 30px !important;
+    }
+    .content-grid-value {
+      font-size: 26px !important;
+      letter-spacing: 2px !important;
+      line-height: 40px !important;
+    }
+  }
+}

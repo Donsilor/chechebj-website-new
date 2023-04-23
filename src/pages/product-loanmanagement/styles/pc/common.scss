@@ -1,0 +1,21 @@
+@import "~@/components/navHeader/light.scss";
+@import "~@/styles/global.scss";
+@import "~@/styles/product.scss";
+@import "~@/components/footer/style.scss";
+
+.product-footer {
+  &:before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    content: "";
+    background: url("~@/assets/product-loanmanagement-footer.png") no-repeat center;
+    background-size: cover;
+  }
+}
+
+.content-grid-item {
+  height: 254px !important;
+}

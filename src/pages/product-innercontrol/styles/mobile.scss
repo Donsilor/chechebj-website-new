@@ -1,0 +1,14 @@
+@media screen and (max-width: 991px) {
+  @import "./pc/common.scss";
+  .product-innercontrol-group4-content {
+    span {
+      display: inline-block;
+      font-size: 26px !important;
+      letter-spacing: 2px !important;
+      line-height: 40px !important;
+      font-weight: 300;
+      color: #333333;
+      margin-bottom: 14px;
+    }
+  }
+}

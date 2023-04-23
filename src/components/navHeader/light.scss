@@ -1,0 +1,73 @@
+@import "./style";
+@mixin lightStyle{
+  & {
+    background: rgb(255, 255, 255);
+    .logo {
+      background: url("~@/assets/logo.png") no-repeat center;
+      background-size: contain;
+    }
+    .expand-menu {
+      .menu {
+        color: #999999;
+        .icon {
+          background: url("~@/components/navHeader/assets/light/down-arrow.png") no-repeat center;
+          background-size: contain;
+        }
+        &:hover {
+          color: #333333;
+          .icon {
+            background: url("~@/components/navHeader/assets/light/up-arrow.png") no-repeat center;
+            background-size: contain;
+          }
+        }
+        .submenu {
+          .submenu-item {
+            color: #999999;
+            background-color: #FFFFFF;
+            &:hover {
+              background-color: #FFFFFF;
+              color: #333333;
+            }
+          }
+        }
+      }
+    }
+    .phone {
+      .img {
+        background: url("~@/components/navHeader/assets/light/phone.png") no-repeat center;
+        background-size: contain;
+      }
+      a {
+        color: #666666;
+      }
+    }
+
+    @media screen and (max-width: 991px) {
+      span > a[href^="tel"] {
+        color: #666666 !important;
+      }
+      #navibar-mobile-toggler {
+        .collapse-menu-icon {
+          background-image: url("~@/components/navHeader/assets/light/collapse-menu-icon.png");
+          background-repeat: no-repeat;
+          background-position: center;
+          background-size: contain;
+        }
+        .collapse-menu-text {
+          color: #333333;
+        }
+      }
+      &.mobile-expand-navi {
+        .collapse-menu-icon {
+          background-image: url("~@/components/navHeader/assets/light/mobile-close.png") !important;
+          background-position: right !important;
+          background-size: 80% !important;
+        }
+      }
+    }
+  }
+}
+
+#navibar {
+  @include lightStyle;
+}

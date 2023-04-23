@@ -1,0 +1,43 @@
+@media screen and (max-width: 991px) {
+  @import "./pc/common.scss";
+  .marke_page,
+  .yxfs_page {
+    margin: 30px auto;
+    .fwcon_page {
+      margin: 20px auto;
+      .fwcon_con {
+        margin-right: 0;
+        .title_font {
+          padding: 0;
+          top: 0;
+          font-size: 24px;
+          line-height: 36px;
+        }
+      }
+    }
+  }
+  .yxfs_page {
+    .fwcon_page {
+      .fwcon_con {
+        .title_font {
+          .title {
+            font-size: 28px;
+          }
+        }
+        left: 0;
+      }
+    }
+  }
+  .ywcj_page {
+    .icon_card {
+      width: auto;
+      height: auto;
+      .title {
+        font-size: 30px;
+      }
+      .subtitle {
+        font-size: 24px;
+      }
+    }
+  }
+}

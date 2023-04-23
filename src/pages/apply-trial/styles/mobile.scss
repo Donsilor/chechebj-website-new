@@ -1,0 +1,37 @@
+@media screen and (max-width: 991px) {
+  @import "./pc/common.scss";
+  .apply-trial-wrapper {
+    padding-left: 24px;
+    padding-right: 24px;
+    .group-body {
+      width: 700px;
+      margin: 0 auto;
+      .row > div {
+        &:nth-child(2n) {
+          .core-product-card {
+            margin: 0 0 16px auto !important;
+          }
+        }
+      }
+    }
+  }
+  .core-product-card {
+    width: 340px;
+    height: 464px;
+    .app-icon {
+      width: 80px;
+      height: 80px;
+    }
+    .title {
+      font-size: 28px;
+    }
+    .subtitle {
+      font-size: 22px;
+    }
+    .apply-trial-btn {
+      color: #FFFFFF;
+      background-color: #2B7AF1;
+      border: 1px solid transparent;
+    }
+  }
+}

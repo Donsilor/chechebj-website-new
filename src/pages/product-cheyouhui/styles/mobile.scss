@@ -1,0 +1,18 @@
+@media screen and (max-width: 991px) {
+  @import "./pc/common.scss";
+  #cheyouhui-part4 {
+    .content-grid {
+      .content-grid-item {
+        margin: 0 15px 15px 0;
+        &.col-6:nth-child(2n) {
+          margin-right: 0;
+        }
+
+        &.col-6 {
+          max-width: calc((100% - 15px) / 2);
+        }
+      }
+    }
+  }
+
+}

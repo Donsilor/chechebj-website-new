@@ -1,0 +1,75 @@
+@media screen and (max-width: 991px) {
+  @import "./pc/common.scss";
+  .core-technology-wrapper {
+    padding: 24px !important;
+  }
+  #ctAccordion {
+    .card {
+      border: none;
+      border-radius: 4px;
+      box-shadow: 0px 2px 8px rgba(60, 131, 248, 0.2);
+      margin-bottom: 24px;
+    }
+    .card-header {
+      background: none;
+      cursor: pointer;
+      height: 100px;
+      padding: 28px 24px;
+      position: relative;
+      & > span {
+        font-size: 28px;
+        color: #333333;
+      }
+      &:not(.collapsed):after {
+        content: "";
+        position: absolute;
+        top: 43px;
+        right: 24px;
+        width: 24px;
+        height: 14.12px;
+        background-image: url("@/pages/main/assets/icons/up-arrow.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+      }
+      &.collapsed:after {
+        content: "";
+        position: absolute;
+        top: 43px;
+        right: 24px;
+        width: 24px;
+        height: 14.12px;
+        background-image: url("@/pages/main/assets/icons/down-arrow.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+      }
+    }
+    .card-body {
+      padding: 0;
+    }
+    .card-cell {
+      padding: 40px 28px;
+      display: flex;
+      img {
+        width: 80px;
+        height: 70px;
+        margin-right: 24px;
+      }
+      .card-body-content {
+        flex: 1;
+      }
+      h4{
+        font-size: 26px;
+        line-height: 45px;
+        color: #333333;
+        margin-bottom: 10px;
+      }
+      h6{
+        font-size: 22px;
+        font-weight: 300;
+        color: #666666;
+      }
+    }
+  }
+}

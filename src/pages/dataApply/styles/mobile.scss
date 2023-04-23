@@ -1,0 +1,65 @@
+@media screen and (max-width: 991px) {
+  @import "./pc/common.scss";
+  .data_page {
+    .data_card {
+      margin: 0 auto;
+      .icon_card {
+        margin-bottom: 20px;
+        padding: 15px;
+        &:hover:before {
+          background: none;
+        }
+        &:hover {
+          background: none;
+          box-shadow: none;
+        }
+        .title {
+          font-size: 30px;
+        }
+        .subtitle {
+          font-size: 24px;
+        }
+      }
+    }
+  }
+  .yycj_page {
+    .yycj_icon_card {
+      width: auto;
+      height: auto;
+      margin-top: 0;
+      padding: 0 20px;
+      .title {
+        font-size: 30px;
+      }
+      .subtitle {
+        font-size: 24px;
+      }
+      &:hover:before {
+        background: none;
+      }
+      &:hover {
+        background: none;
+        box-shadow: none;
+      }
+    }
+  }
+  .serve_page {
+    .data_title {
+      .font {
+        font-size: 30px;
+      }
+    }
+    .icon_card {
+      width: auto;
+      height: auto;
+      margin-top: 0;
+      padding: 0 20px;
+      .title {
+        font-size: 30px;
+      }
+      .subtitle {
+        font-size: 24px;
+      }
+    }
+  }
+}

@@ -1,0 +1,27 @@
+@media screen and (min-width: 992px) {
+  @import "common";
+
+  #cheyouhui-part4 {
+    .content-grid {
+      .content-grid-item {
+        margin: 0 15px 15px 0;
+
+        &.col-lg-4:nth-child(3n) {
+          margin-right: 0;
+        }
+
+
+        &.col-lg-4 {
+          max-width: calc((100% - 30px) / 3);
+        }
+
+      }
+    }
+  }
+
+
+  .cheyouhui-content-small {
+    font-size: 16px !important;
+  }
+
+}

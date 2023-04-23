@@ -1,0 +1,44 @@
+@import "~@/components/footer/style.scss";
+
+.group {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 60px 20px 60px 20px;
+
+  .group-header {
+    text-align: center;
+
+    .prevtitle {
+      height: 50px;
+      font-size: 34px;
+      font-weight: 800;
+      line-height: 50px;
+      margin-bottom: -20px;
+      color: #E6EAF2;
+    }
+
+    .title {
+      height: 41px;
+      font-size: 28px;
+      font-weight: 500;
+      line-height: 41px;
+      color: #333333;
+      z-index: 2;
+      margin-bottom: 0;
+    }
+
+    .subtitle {
+      height: 50px;
+      font-size: 34px;
+      font-weight: 800;
+      line-height: 50px;
+      margin-top: -20px;
+      color: #E6EAF2;
+    }
+  }
+
+  .group-body {
+    margin-top: 60px;
+  }
+}

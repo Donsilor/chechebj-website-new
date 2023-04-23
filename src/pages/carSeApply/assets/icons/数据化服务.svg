@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="74" height="74" viewBox="0 0 74 74">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        fill: none;
+      }
+
+      .cls-3 {
+        fill: #cde0ff;
+      }
+
+      .cls-4, .cls-5 {
+        stroke: none;
+      }
+
+      .cls-5 {
+        fill: #3c83f8;
+      }
+    </style>
+  </defs>
+  <g id="数据化服务" transform="translate(-191 -2109)">
+    <g id="贷后风险监控" transform="translate(0 498)">
+      <g id="营销推广服务" transform="translate(0 478)">
+        <g id="车辆检测服务" transform="translate(-573 -442)">
+          <rect id="矩形_1194" data-name="矩形 1194" class="cls-1" width="74" height="74" transform="translate(764 1575)"/>
+          <g id="车辆检测服务-2" data-name="车辆检测服务" transform="translate(0 1)">
+            <g id="组_1822" data-name="组 1822">
+              <g id="组_1812" data-name="组 1812" transform="translate(74 -103)">
+                <g id="组_1806" data-name="组 1806" transform="translate(6 15)">
+                  <g id="多边形_23" data-name="多边形 23" class="cls-2" transform="translate(687 1670)">
+                    <path class="cls-4" d="M51,0,68,29.5,51,59H17L0,29.5,17,0Z"/>
+                    <path class="cls-5" d="M 19.31156921386719 4 L 4.616653442382813 29.5 L 19.31156921386719 55 L 48.68843078613281 55 L 63.38334655761719 29.5 L 48.68843078613281 4 L 19.31156921386719 4 M 17 0 L 51 0 L 68 29.5 L 51 59 L 17 59 L 0 29.5 L 17 0 Z"/>
+                  </g>
+                </g>
+              </g>
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+    <path id="路径_1287" data-name="路径 1287" class="cls-3" d="M29.016,18.515a13.5,13.5,0,1,0,13.5,13.5h-13.5Zm3-3a13.5,13.5,0,0,1,13.5,13.5h-13.5v-13.5Z" transform="translate(197.484 2115.485)"/>
+  </g>
+</svg>

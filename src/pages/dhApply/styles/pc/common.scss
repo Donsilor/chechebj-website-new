@@ -1,0 +1,193 @@
+@import "~@/components/navHeader/light.scss";
+@import "~@/components/footer/style.scss";
+
+.root {
+  padding-top: 80px;
+  background: #f7faff;
+}
+.page_header {
+  width: 100%;
+  background: #1d5db1;
+  .header_bar {
+    max-width: 1200px;
+    margin: 0 auto;
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+}
+.page_about {
+  max-width: 1200px;
+  margin: 70px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 30px;
+  .about_me {
+    margin-right: 50px;
+    .title {
+      font-size: 28px;
+      color: #333333;
+    }
+    .title_en {
+      font-size: 44px;
+      color: #e6eaf2;
+      margin-top: -20px;
+      font-weight: 800;
+    }
+    .title_font {
+      color: #333333;
+      font-size: 16px;
+      line-height: 26px;
+      & > div {
+        span {
+          vertical-align: middle;
+          display: inline-block;
+          width: 4px;
+          height: 4px;
+          background: #666666;
+          border-radius: 50%;
+          position: relative;
+          right: 10px;
+        }
+      }
+    }
+  }
+  .about_img {
+    img {
+      width: 590px;
+      height: auto;
+    }
+  }
+}
+.page_car {
+  width: 100%;
+  height: 450px;
+  background: #19213b;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+  img {
+    width: 380px;
+    height: 430px;
+    margin-top: -50px;
+    margin-right: 70px;
+  }
+  .car_font {
+    color: #828ba7;
+    .tite {
+      font-size: 58px;
+      margin-left: -170px;
+      font-weight: 800;
+      opacity: 0.6;
+    }
+    .font {
+      font-size: 16px;
+      width: 600px;
+      line-height: 26px;
+      span {
+        vertical-align: middle;
+        display: inline-block;
+        width: 4px;
+        height: 4px;
+        background: #46b2e7;
+        border-radius: 50%;
+        position: relative;
+        right: 10px;
+      }
+    }
+  }
+}
+.fwcon_page {
+  max-width: 1200px;
+  margin: 70px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 30px;
+  .bigimg {
+    width: 660px;
+    height: 400px;
+    margin-left: -170px;
+    margin-top: -20px;
+  }
+  .fwcon_con {
+    margin-right: 50px;
+    .checheimg {
+      width: 20px;
+      height: 116px;
+      margin-left: 70px;
+      position: relative;
+      z-index: 10;
+    }
+    .title {
+      font-size: 28px;
+      color: #333333;
+    }
+    .title_en {
+      font-size: 44px;
+      color: #e6eaf2;
+      margin-top: -20px;
+      font-weight: 800;
+    }
+    .title_font {
+      color: #000000;
+      font-size: 16px;
+      background: #f5f8ff;
+      opacity: 0.5;
+      padding: 30px 10px;
+      width: 631px;
+      line-height: 34px;
+      & > div {
+        span {
+          vertical-align: middle;
+          display: inline-block;
+          width: 4px;
+          height: 4px;
+          background: #666666;
+          border-radius: 50%;
+          position: relative;
+          right: 10px;
+        }
+      }
+    }
+  }
+}
+.barnd_page {
+  width: 100%;
+  background: #e9f0fa;
+  .bank_page {
+    padding: 60px 30px;
+    .font_e {
+      color: #d2dcf1 !important;
+    }
+  }
+}
+.bank_page {
+  max-width: 1200px;
+  margin: 70px auto;
+  padding: 0 30px;
+  &.bank {
+    margin-bottom: 160px;
+  }
+  .barnd_title {
+    .font {
+      font-size: 28px;
+      color: #333333;
+      margin-top: -20px;
+      margin-bottom: -20px;
+    }
+    .font_e {
+      font-size: 38px;
+      color: #e6eaf2;
+      font-weight: 800;
+    }
+  }
+  .brand_icon {
+    img {
+      width: 100%;
+    }
+  }
+}

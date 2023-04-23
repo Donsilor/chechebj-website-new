@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="74" height="74" viewBox="0 0 74 74">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        fill: none;
+      }
+
+      .cls-3 {
+        fill: #cde0ff;
+      }
+
+      .cls-4, .cls-5 {
+        stroke: none;
+      }
+
+      .cls-5 {
+        fill: #3c83f8;
+      }
+    </style>
+  </defs>
+  <g id="车辆二次评估" transform="translate(-795 -1611)">
+    <g id="车辆二次评估-2" data-name="车辆二次评估">
+      <g id="业务流程跟踪" transform="translate(0 478)">
+        <g id="人工评估服务" transform="translate(-573 -442)">
+          <rect id="矩形_1196" data-name="矩形 1196" class="cls-1" width="74" height="74" transform="translate(1368 1575)"/>
+          <g id="人工评估服务-2" data-name="人工评估服务">
+            <g id="组_1821" data-name="组 1821" transform="translate(250 -103)">
+              <g id="组_1809" data-name="组 1809" transform="translate(424 1)">
+                <g id="组_1806" data-name="组 1806" transform="translate(10 14)">
+                  <g id="多边形_23" data-name="多边形 23" class="cls-2" transform="translate(687 1670)">
+                    <path class="cls-4" d="M51,0,68,29.5,51,59H17L0,29.5,17,0Z"/>
+                    <path class="cls-5" d="M 19.31156921386719 4 L 4.616653442382813 29.5 L 19.31156921386719 55 L 48.68843078613281 55 L 63.38334655761719 29.5 L 48.68843078613281 4 L 19.31156921386719 4 M 17 0 L 51 0 L 68 29.5 L 51 59 L 17 59 L 0 29.5 L 17 0 Z"/>
+                  </g>
+                </g>
+              </g>
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+    <g id="组_1825" data-name="组 1825" transform="translate(803.215 1610.595)">
+      <path id="路径_1281" data-name="路径 1281" class="cls-3" d="M13.788,753.076a.553.553,0,0,0,.776.573l7.085-3.092-7.009-5.163C14.377,747.723,13.826,752.7,13.788,753.076Z" transform="translate(0 -702.326)"/>
+      <path id="路径_1282" data-name="路径 1282" class="cls-3" d="M653.578,743.4a1.073,1.073,0,0,0,1.073,1.071h8.577a1.07,1.07,0,1,0,0-2.141h-8.577A1.072,1.072,0,0,0,653.578,743.4Z" transform="translate(-620.65 -699.353)"/>
+      <path id="路径_1283" data-name="路径 1283" class="cls-3" d="M527.9,27.957a1.538,1.538,0,0,0-.326-2.149l-5.571-4.1a1.539,1.539,0,0,0-2.15.326l-.456.619,8.046,5.927Z" transform="translate(-490.488 0)"/>
+      <path id="路径_1284" data-name="路径 1284" class="cls-3" d="M78.126,91.936,65.173,109.507l8.046,5.928L86.172,97.862Zm-4.241,19.477a.93.93,0,1,1-1.509-1.088l8.719-12.089A.93.93,0,1,1,82.6,99.323Z" transform="translate(-49.851 -68.42)"/>
+      <path id="路径_1285" data-name="路径 1285" class="cls-3" d="M390.07,952.4H372.927a1.071,1.071,0,0,0,0,2.142H390.07a1.071,1.071,0,1,0,0-2.142Z" transform="translate(-347.358 -903.142)"/>
+    </g>
+  </g>
+</svg>

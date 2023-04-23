@@ -1,0 +1,84 @@
+@import "~@/styles/global.scss";
+@import "~@/components/navHeader/light.scss";
+@import "~@/components/footer/style.scss";
+
+.root {
+  background: #F5F8FF;
+}
+.core-technology-banner {
+  max-width: 1200px;
+  width: 100%;
+  margin: 100px auto 0;
+  position: relative;
+
+  & > img {
+    width: 100%;
+    height: auto;
+  }
+}
+.core-technology-wrapper {
+  .group-body {
+    margin-top: 0 !important;
+  }
+}
+
+.core-technology {
+  display: flex;
+  position: relative;
+
+  .menu-wrapper {
+    display: flex;
+    flex-direction: column;
+
+    .core-technology-menu {
+      width: 200px;
+      height: 60px;
+      position: relative;
+      padding: 18px 28px;
+      cursor: pointer;
+      user-select: none;
+
+      &:active {
+        text-decoration: none;
+      }
+
+      &:hover {
+        text-decoration: none;
+
+        span {
+          color: #666666;
+        }
+      }
+
+      span {
+        height: 24px;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+        color: #999999;
+      }
+      &::before {
+        content: " ";
+        width: 4px;
+        height: 0px;
+        background: #3C83F8;
+        position: absolute;
+        top: 30px;
+        left: 0;
+        transition: 0.2s;
+      }
+
+      &.active {
+        &::before {
+          height: 60px;
+          top: 0;
+          transition: 0.2s;
+        }
+
+        span {
+          color: #333333;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,185 @@
+@media screen and (max-width: 991px) {
+  @import "./pc/common.scss";
+  .root {
+    background: #f5f8ff;
+  }
+  .slide-content {
+    .swiper1-link {
+      position: absolute;
+      bottom: 80px;
+      width: 140px;
+      height: 40px;
+      border: 1px solid rgba(255, 255, 255, 0.6);
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      span {
+        height: 40px;
+        line-height: 40px;
+        font-size: 16px;
+        color: #ffffff;
+      }
+    }
+  }
+  .core-technology-wrapper {
+    .group {
+      padding-top: 0px !important;
+    }
+    .core-technology-mobile {
+      margin-top: 24px !important;
+    }
+  }
+  .core-product-card {
+    margin-bottom: 24px;
+    background: #ffffff;
+    box-shadow: 0px 4px 16px rgba(60, 131, 248, 0.1);
+    height: 220px;
+    .title {
+      position: absolute;
+      top: 46px;
+      left: 24px;
+      height: 50px;
+      font-size: 34px;
+      line-height: 50px;
+      color: #333333;
+    }
+
+    .subtitle {
+      position: absolute;
+      top: 106px;
+      left: 24px;
+      height: 41px;
+      font-size: 28px;
+      line-height: 41px;
+      color: #333333;
+    }
+    &:before {
+      content: "";
+      width: 26px;
+      height: 4px !important;
+      background: #3c83f8;
+      position: absolute;
+      bottom: 48px;
+      left: 24px;
+    }
+    .app-icon {
+      width: 80px;
+      height: 80px;
+      position: absolute;
+      top: 46px;
+      right: 24px;
+
+      &.active {
+        display: none;
+      }
+    }
+  }
+
+  #ctAccordion {
+    .card {
+      border: none;
+      border-radius: 4px;
+      box-shadow: 0px 2px 8px rgba(60, 131, 248, 0.2);
+      margin-bottom: 24px;
+    }
+    .card-header {
+      background: none;
+      cursor: pointer;
+      height: 100px;
+      padding: 28px 24px;
+      position: relative;
+      & > span {
+        font-size: 28px;
+        color: #333333;
+      }
+      &:not(.collapsed):after {
+        content: "";
+        position: absolute;
+        top: 43px;
+        right: 24px;
+        width: 24px;
+        height: 14.12px;
+        background-image: url("../assets/icons/up-arrow.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+      }
+      &.collapsed:after {
+        content: "";
+        position: absolute;
+        top: 43px;
+        right: 24px;
+        width: 24px;
+        height: 14.12px;
+        background-image: url("../assets/icons/down-arrow.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+      }
+    }
+    .card-body {
+      padding: 0;
+    }
+    .card-cell {
+      padding: 40px 28px;
+      display: flex;
+      img {
+        width: 60px;
+        height: 60px;
+        margin-right: 24px;
+      }
+      .card-body-content {
+        flex: 1;
+      }
+      h4 {
+        font-size: 26px;
+        line-height: 45px;
+        color: #333333;
+        margin-bottom: 10px;
+      }
+      h6 {
+        font-size: 22px;
+        font-weight: 300;
+        color: #666666;
+      }
+    }
+  }
+
+  #main-scene {
+    .scene-swiper-header {
+      display: none !important;
+      & > .title {
+        font-size: 14px;
+      }
+    }
+    .scene-swiper-container {
+      width: 180%;
+      margin-left: -40%;
+      padding: 30px 0;
+      .slide-content {
+        .title {
+          font-size: 22px !important;
+        }
+        .subtitle {
+          font-size: 16px !important;
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+  .swiper-inform {
+    font-size: 25px;
+    margin-top: 32px;
+    position: relative;
+    right: 0;
+    a {
+      .jiantou {
+        height: 24px;
+        margin-left: 18px;
+        display: inline-block;
+        vertical-align: middle;
+      }
+    }
+  }
+}

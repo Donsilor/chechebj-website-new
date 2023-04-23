@@ -1,0 +1,60 @@
+<div class="submit-trial-root">
+    <div class="alert alert-success" id="successInfo">
+        <strong>成功!</strong> <span id="successMsg">我们稍后会有专人联系您!</span>
+    </div>
+    <div class="alert alert-danger" id="errorInfo">
+        <strong>错误!</strong> <span id="errorMsg">我们稍后会有专人联系您!</span>
+    </div>
+    <div class="form-wrapper">
+        <div class="form-header">
+            <div class="divider"></div>
+            <span>申请试用</span>
+        </div>
+        <div class="form-line companyName">
+            <input type="text" placeholder="请输入公司名称" id="companyInput" maxlength="50"/>
+            <img src="~@/pages/submit-trial/assets/公司名称ICON@2x.png"/>
+        </div>
+        <div class="form-line name">
+            <input type="text" placeholder="请输入姓名" id="nameInput" maxlength="20"/>
+            <img src="~@/pages/submit-trial/assets/姓名ICON@2x.png"/>
+        </div>
+        <div class="form-line phone">
+            <input type="text" placeholder="请输入手机号码" id="phoneInput" maxlength="15"/>
+            <div class="prefix">
+                <span>+86</span>
+            </div>
+        </div>
+        <div class="form-line code">
+            <input type="text" placeholder="请输入验证码" id="codeInput" maxlength="6"/>
+            <div id="trial-sms-btn">
+                <span>获取验证码</span>
+            </div>
+        </div>
+        <div id="trial-submit-btn">
+            <span>提交</span>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="myModal" tabindex="-1">
+    <div class="modal-dialog modal-md">
+        <div class="modal-content">
+
+            <!-- 模态框头部 -->
+            <div class="modal-header">
+                <h4 class="modal-title">提示</h4>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+
+            <!-- 模态框主体 -->
+            <div class="modal-body" id="modal-body">
+                请输入合法的手机号
+            </div>
+
+            <!-- 模态框底部 -->
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" data-dismiss="modal">确定</button>
+            </div>
+
+        </div>
+    </div>
+</div>

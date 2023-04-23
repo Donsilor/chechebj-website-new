@@ -1,0 +1,73 @@
+@import "./style";
+@import "./light";
+@mixin darkStyle {
+  & {
+    background: rgba(0, 33, 143, 0.7);
+    .logo {
+      background: url("~@/assets/logo-light.png") no-repeat center;
+      background-size: contain;
+    }
+    .expand-menu {
+      .menu {
+        color: rgba(255, 255, 255, 0.6);
+        .icon {
+          background: url("~@/components/navHeader/assets/dark/down-arrow.png") no-repeat center;
+          background-size: contain;
+        }
+        &:hover {
+          color: #FFFFFF;
+          .icon {
+            background: url("~@/components/navHeader/assets/dark/up-arrow.png") no-repeat center;
+            background-size: contain;
+          }
+        }
+        .submenu {
+          .submenu-item {
+            color: rgba(255, 255, 255, 0.6);
+            background-color: rgba(0, 33, 143, 0.7);
+            &:hover {
+              background-color: #00247C;
+              color: #FFFFFF;
+            }
+          }
+        }
+      }
+    }
+    .phone {
+      .img {
+        background: url("~@/components/navHeader/assets/dark/phone-light.png") no-repeat center;
+        background-size: contain;
+      }
+      a {
+        color: #FFFFFF;
+      }
+    }
+
+    @media screen and (max-width: 991px) {
+      span > a[href^="tel"] {
+        color: #FFFFFF !important;
+      }
+      #navibar-mobile-toggler {
+        .collapse-menu-icon {
+          background: url("~@/components/navHeader/assets/dark/collapse-menu-icon.png") no-repeat center;
+          background-size: contain;
+        }
+
+        .collapse-menu-text {
+          color: #FFFFFF;
+        }
+      }
+    }
+  }
+}
+#navibar {
+  &:not(.mobile-expand-navi):not(.light-navibar) {
+    @include darkStyle;
+  }
+  &.light-navibar {
+    @include lightStyle;
+  }
+  &.mobile-expand-navi {
+    @include lightStyle;
+  }
+}

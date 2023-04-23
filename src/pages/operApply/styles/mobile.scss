@@ -1,0 +1,37 @@
+@media screen and (max-width: 991px) {
+  @import "./pc/common.scss";
+  .content_page1 {
+    margin: 20px auto;
+    padding: 0;
+    .data_card {
+      margin: 0 !important;
+      padding: 0;
+      .icon_card {
+        width: auto;
+        height: auto;
+        padding: 15px;
+        background: none;
+        margin-bottom: 30px;
+        &.card_sm {
+          padding: 15px;
+        }
+        .title {
+          font-size: 30px;
+        }
+        .subtitle {
+          font-size: 24px;
+        }
+        &:hover:before {
+          background: none;
+        }
+        &:hover {
+          background: none;
+          box-shadow: none;
+        }
+      }
+    }
+  }
+  .content_page2 {
+    padding: 0;
+  }
+}

@@ -1,0 +1,55 @@
+@media screen and (max-width: 991px) {
+  @import "./pc/common.scss";
+  .page_about {
+    margin: 30px auto;
+    .about_me {
+      margin-right: 0 !important;
+      .title {
+        font-size: 30px;
+      }
+      .title_font {
+        font-size: 26px;
+        line-height: 36px;
+        margin-left: 13px;
+      }
+    }
+    .about_img img {
+      width: 100%;
+      margin-top: 20px;
+    }
+  }
+  .page_car {
+    height: auto;
+    margin-top: 0;
+    padding: 40px 0;
+    .car_font {
+      .tite {
+        margin-left: 0;
+      }
+      .font {
+        font-size: 26px;
+        line-height: 36px;
+      }
+    }
+  }
+  .fwcon_page {
+    margin: 30px auto;
+    .fwcon_con {
+      margin-right: 0;
+      .title {
+        font-size: 30px;
+        margin-top: 20px;
+      }
+      .title_font {
+        width: 100%;
+        font-size: 26px;
+      }
+      .img_sm {
+        width: 100%;
+      }
+    }
+  }
+  .bank_page.bank {
+    margin: 40px auto 100px;
+  }
+}

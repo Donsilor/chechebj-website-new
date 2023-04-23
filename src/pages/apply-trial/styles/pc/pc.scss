@@ -1,0 +1,12 @@
+@media screen and (min-width: 992px) {
+  @import "common";
+  .apply-trial-wrapper {
+    .group-body{
+      width: 85%;
+      margin: 0 auto;
+    }
+  }
+  .core-product-card {
+    max-width: 300px;
+  }
+}
